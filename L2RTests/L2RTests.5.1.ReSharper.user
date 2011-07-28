@@ -1,0 +1,56 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Primitives.cs" caret="168" fromTop="6" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:Class1.cs" caret="251" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:Class1.cs" caret="0" fromTop="0" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:Class1.cs" caret="352" fromTop="21" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Primitives.cs" caret="168" fromTop="6" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:Class1.cs" caret="249" fromTop="11" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Primitives`0" priority="0" />
+      <Item value="EnvironmentVariableTarget`0" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="new" priority="2" />
+      <Item value="System" priority="0" />
+      <Item value="Web" priority="0" />
+      <Item value="Console`0" priority="0" />
+      <Item value="public" priority="3" />
+      <Item value="class" priority="3" />
+      <Item value="Class1`0" priority="0" />
+      <Item value="blah" priority="2" />
+      <Item value="static" priority="1" />
+      <Item value="Text" priority="0" />
+      <Item value="this" priority="0" />
+      <Item value="object" priority="1" />
+      <Item value="return" priority="1" />
+      <Item value="T`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:L2RTests.Class2">
+      <Item value="IsA`1" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
