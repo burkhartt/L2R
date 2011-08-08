@@ -8,14 +8,33 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Primitives.cs" caret="168" fromTop="6" />
-      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:Class1.cs" caret="251" fromTop="12" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsATests.cs" caret="734" fromTop="33" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Cast.cs" caret="49" fromTop="2" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:CastTests.cs" caret="353" fromTop="16" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsNullTests.cs" caret="591" fromTop="22" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsNotNullTests.cs" caret="65" fromTop="2" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="403" fromTop="18" />
     </RecentFiles>
     <RecentEdits>
-      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:Class1.cs" caret="0" fromTop="0" />
-      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:Class1.cs" caret="352" fromTop="21" />
-      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Primitives.cs" caret="168" fromTop="6" />
-      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:Class1.cs" caret="249" fromTop="11" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="827" fromTop="25" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsATests.cs" caret="140" fromTop="8" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsATests.cs" caret="96" fromTop="5" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="109" fromTop="4" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="187" fromTop="8" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="448" fromTop="12" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsATests.cs" caret="557" fromTop="18" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="699" fromTop="30" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="521" fromTop="23" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsATests.cs" caret="416" fromTop="18" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsATests.cs" caret="734" fromTop="33" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Cast.cs" caret="49" fromTop="2" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:CastTests.cs" caret="719" fromTop="20" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="936" fromTop="25" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:CastTests.cs" caret="320" fromTop="13" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:CastTests.cs" caret="404" fromTop="17" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsNullTests.cs" caret="184" fromTop="10" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsNullTests.cs" caret="594" fromTop="22" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:IsNotNullTests.cs" caret="605" fromTop="20" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -33,24 +52,78 @@
     <ItemStatistics item="Default">
       <Item value="Primitives`0" priority="0" />
       <Item value="EnvironmentVariableTarget`0" priority="0" />
-      <Item value="var" priority="0" />
-      <Item value="new" priority="2" />
-      <Item value="System" priority="0" />
+      <Item value="var" priority="8" />
+      <Item value="new" priority="5" />
+      <Item value="System" priority="1" />
       <Item value="Web" priority="0" />
       <Item value="Console`0" priority="0" />
-      <Item value="public" priority="3" />
-      <Item value="class" priority="3" />
+      <Item value="public" priority="21" />
+      <Item value="class" priority="6" />
       <Item value="Class1`0" priority="0" />
-      <Item value="blah" priority="2" />
-      <Item value="static" priority="1" />
-      <Item value="Text" priority="0" />
-      <Item value="this" priority="0" />
-      <Item value="object" priority="1" />
-      <Item value="return" priority="1" />
-      <Item value="T`0" priority="0" />
+      <Item value="blah" priority="5" />
+      <Item value="static" priority="9" />
+      <Item value="Text" priority="3" />
+      <Item value="this" priority="7" />
+      <Item value="object" priority="22" />
+      <Item value="return" priority="11" />
+      <Item value="T`0" priority="11" />
+      <Item value="if" priority="1" />
+      <Item value="try" priority="0" />
+      <Item value="false" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="typeof" priority="2" />
+      <Item value="int" priority="3" />
+      <Item value="bool" priority="4" />
+      <Item value="IsA`1" priority="1" />
+      <Item value="type" priority="1" />
+      <Item value="null" priority="4" />
+      <Item value="Type`0" priority="2" />
+      <Item value="Test" priority="10" />
+      <Item value="void" priority="10" />
+      <Item value="IsAn`1" priority="0" />
+      <Item value="nonNullVar" priority="0" />
+      <Item value="private" priority="1" />
+      <Item value="ClassA`0" priority="3" />
+      <Item value="ClassB`0" priority="0" />
+      <Item value="classB" priority="0" />
+      <Item value="Assert`0" priority="1" />
+      <Item value="classA" priority="0" />
+      <Item value="InvalidCastException`0" priority="0" />
+      <Item value="nullVar" priority="0" />
+      <Item value="notNullVar" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:L2RTests.Class2">
+      <Item value="IsA`1" priority="1" />
+      <Item value="Type`1" priority="0" />
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:">
+      <Item value="CastAs`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="GetType`0" priority="0" />
+      <Item value="CastAs`1" priority="0" />
       <Item value="IsA`1" priority="0" />
+      <Item value="IsAn`1" priority="0" />
+      <Item value="IsNull`0" priority="2" />
+      <Item value="IsNotNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="IsA`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Boolean">
+      <Item value="ShouldBeTrue`0" priority="3" />
+      <Item value="ShouldBeFalse`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="IsAn`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:L2RTests.CastTests+ClassA">
+      <Item value="CastAs`1" priority="0" />
+      <Item value="IsNull`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="Throws`1" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

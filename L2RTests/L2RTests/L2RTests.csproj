@@ -53,9 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CastTests.cs" />
+    <Compile Include="InTests.cs" />
     <Compile Include="IsATests.cs" />
     <Compile Include="IsNotNullTests.cs" />
     <Compile Include="IsNullTests.cs" />
+    <Compile Include="NotInTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

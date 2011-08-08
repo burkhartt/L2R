@@ -7,8 +7,17 @@
     </boolean>
   </SettingsComponent>
   <RecentFiles>
-    <RecentFiles />
-    <RecentEdits />
+    <RecentFiles>
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="956" fromTop="31" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:ListHelpers.cs" caret="247" fromTop="10" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:InTests.cs" caret="247" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="956" fromTop="38" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="959" fromTop="31" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:ListHelpers.cs" caret="256" fromTop="10" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:InTests.cs" caret="247" fromTop="12" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -21,4 +30,15 @@
     </NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="static" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="public" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="Test" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="word" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

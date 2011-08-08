@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Cast.cs" />
     <Compile Include="Is.cs" />
+    <Compile Include="ListHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
