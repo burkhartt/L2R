@@ -9,14 +9,24 @@
   <RecentFiles>
     <RecentFiles>
       <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="956" fromTop="31" />
-      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:ListHelpers.cs" caret="247" fromTop="10" />
-      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:InTests.cs" caret="247" fromTop="12" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:InTests.cs" caret="1011" fromTop="40" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:ListHelpers.cs" caret="390" fromTop="13" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:NotInTests.cs" caret="497" fromTop="21" />
     </RecentFiles>
     <RecentEdits>
       <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="956" fromTop="38" />
       <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:Is.cs" caret="959" fromTop="31" />
-      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:ListHelpers.cs" caret="256" fromTop="10" />
-      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:InTests.cs" caret="247" fromTop="12" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:InTests.cs" caret="998" fromTop="39" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:InTests.cs" caret="714" fromTop="30" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:NotInTests.cs" caret="229" fromTop="11" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:NotInTests.cs" caret="443" fromTop="19" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:NotInTests.cs" caret="664" fromTop="27" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:NotInTests.cs" caret="877" fromTop="35" />
+      <File id="656A1483-EF62-4FBB-844E-5901539B1E1E/f:ListHelpers.cs" caret="353" fromTop="13" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:NotInTests.cs" caret="307" fromTop="15" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:NotInTests.cs" caret="523" fromTop="23" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:NotInTests.cs" caret="739" fromTop="31" />
+      <File id="1E3BA92E-46E7-440B-B69B-CA535EC9E795/f:NotInTests.cs" caret="952" fromTop="39" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -34,11 +44,37 @@
     <ItemStatistics item="Default">
       <Item value="static" priority="0" />
       <Item value="class" priority="0" />
-      <Item value="public" priority="0" />
-      <Item value="void" priority="0" />
-      <Item value="Test" priority="0" />
-      <Item value="var" priority="0" />
-      <Item value="word" priority="0" />
+      <Item value="public" priority="5" />
+      <Item value="void" priority="4" />
+      <Item value="Test" priority="4" />
+      <Item value="var" priority="2" />
+      <Item value="word" priority="1" />
+      <Item value="const" priority="0" />
+      <Item value="List`0" priority="1" />
+      <Item value="new" priority="3" />
+      <Item value="List" priority="0" />
+      <Item value="list" priority="2" />
+      <Item value="object" priority="4" />
+      <Item value="bool" priority="0" />
+      <Item value="this" priority="0" />
+      <Item value="params" priority="0" />
+      <Item value="return" priority="2" />
+      <Item value="objects" priority="0" />
+      <Item value="All`1" priority="0" />
+      <Item value="foreach" priority="0" />
+      <Item value="in" priority="0" />
+      <Item value="if" priority="0" />
+      <Item value="false" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="In`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Boolean">
+      <Item value="ShouldBeFalse`0" priority="1" />
+      <Item value="ShouldBeTrue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NUnit.Framework.List">
+      <Item value="In`0" priority="1" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

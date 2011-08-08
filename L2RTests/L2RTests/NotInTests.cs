@@ -39,5 +39,21 @@ namespace L2RTests
 
             list.NotIn(new StringBuilder(), new object[] { "stuff" }).ShouldBeTrue();
         }
+
+        [Test]
+        public void When_a_type_is_in_a_list_return_false()
+        {
+            var myType = typeof(string);
+
+            myType.NotIn(typeof(string), typeof(int)).ShouldBeFalse();
+        }
+
+        [Test]
+        public void When_a_type_is_not_in_a_list_return_true()
+        {
+            var myType = typeof(string);
+
+            myType.NotIn(typeof(int), typeof(bool)).ShouldBeTrue();
+        }
     }
 }
