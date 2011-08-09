@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayHelpers.cs" />
     <Compile Include="Cast.cs" />
     <Compile Include="Is.cs" />
     <Compile Include="ListHelpers.cs" />

@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CastTests.cs" />
+    <Compile Include="ImplodeTests.cs" />
     <Compile Include="InTests.cs" />
     <Compile Include="IsATests.cs" />
     <Compile Include="IsNotNullTests.cs" />
