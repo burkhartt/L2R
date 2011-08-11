@@ -1,5 +1,0 @@
-C:\_Application\L2R\L2R\L2R\bin\Debug\L2R.dll
-C:\_Application\L2R\L2R\L2R\bin\Debug\L2R.pdb
-C:\_Application\L2R\L2R\L2R\obj\Debug\ResolveAssemblyReference.cache
-C:\_Application\L2R\L2R\L2R\obj\Debug\L2R.dll
-C:\_Application\L2R\L2R\L2R\obj\Debug\L2R.pdb
