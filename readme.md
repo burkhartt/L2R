@@ -9,6 +9,8 @@ Here are the current estensions:
     Object.CastAs<T>() // replaces (string)Object
     Object.IsA<T>()
     Object.IsAn<T>() // myNumber.IsAn<int>() instead of int.TryParse()
+
+    // Validation
     Object.IsNotA<T>() / Object.IsNotA<T>()
     Object.IsNull() / Object.IsNotNull()
 
