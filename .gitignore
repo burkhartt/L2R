@@ -1,0 +1,15 @@
+bin/
+obj/
+local/
+TestResults/
+_ReSharper.*/
+
+*.suo
+*.user
+*.swp
+*.bak
+*.[Cc]ache
+
+Thumbs.db
+.DS_Store
+~$*
