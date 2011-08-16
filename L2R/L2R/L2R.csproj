@@ -45,6 +45,7 @@
     <Compile Include="Is.cs" />
     <Compile Include="ListHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringHelpers.cs" />
     <Compile Include="Switch.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
