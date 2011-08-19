@@ -7,6 +7,44 @@ namespace L2RTests
 	[TestFixture]
 	public class MapTests
 	{
+		#region Testing Data
+
+		private class ClassOne
+		{
+			public string NamedProperty { get; set; }
+
+			public string StringProperty { get; set; }
+			public int IntProperty { get; set; }
+			public bool BoolProperty { get; set; }
+			public DateTime DateTimeProperty { get; set; }
+
+			public int WrongTypeProperty { get; set; }
+		}
+
+		private class ClassTwo
+		{
+			public string NamedProperty { get; set; }
+
+			public string StringProperty { get; set; }
+			public int IntProperty { get; set; }
+			public bool BoolProperty { get; set; }
+			public DateTime DateTimeProperty { get; set; }
+
+			public long WrongTypeProperty { get; set; }
+		}
+
+		private class ClassThree
+		{
+		}
+
+		#endregion
+
+		[SetUp]
+		public void Init()
+		{
+			Map.Cache.Clear();
+		}
+
 		[Test]
 		public void Returns_the_correct_type()
 		{
@@ -68,29 +106,36 @@ namespace L2RTests
 			classTwo.WrongTypeProperty.ShouldEqual(0);
 		}
 
-
-		private class ClassOne
+		[Test]
+		public void The_cache_increases_by_two_after_the_first_mapping()
 		{
-			public string NamedProperty { get; set; }
-
-			public string StringProperty { get; set; }
-			public int IntProperty { get; set; }
-			public bool BoolProperty { get; set; }
-			public DateTime DateTimeProperty { get; set; }
-
-			public int WrongTypeProperty { get; set; }
+			var classOne = new ClassOne();
+			var classTwo = classOne.MapAs<ClassTwo>();
+			Map.Cache.Count.ShouldEqual(2);
 		}
 
-		private class ClassTwo
+		[Test]
+		public void The_cache_increases_by_one_after_mapping_with_an_unknow_type()
 		{
-			public string NamedProperty { get; set; }
+			var classOneA = new ClassOne();
+			var classTwoA = classOneA.MapAs<ClassTwo>();
+			Map.Cache.Count.ShouldEqual(2);
 
-			public string StringProperty { get; set; }
-			public int IntProperty { get; set; }
-			public bool BoolProperty { get; set; }
-			public DateTime DateTimeProperty { get; set; }
+			var classOneB = new ClassOne();
+			var classThree = classOneB.MapAs<ClassThree>();
+			Map.Cache.Count.ShouldEqual(3);
+		}
 
-			public long WrongTypeProperty { get; set; }
+		[Test]
+		public void The_cache_does_not_increases_after_mapping_with_know_types()
+		{
+			var classOneA = new ClassOne();
+			var classTwoA = classOneA.MapAs<ClassTwo>();
+			Map.Cache.Count.ShouldEqual(2);
+
+			var classOneB = new ClassOne();
+			var classTwoB = classOneB.MapAs<ClassTwo>();
+			Map.Cache.Count.ShouldEqual(2);
 		}
 	}
 }
