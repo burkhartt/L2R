@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace System
@@ -21,27 +22,58 @@ namespace System
 		public static T MapAs<T>(this object inObject)
 		{
 			var outObject = Activator.CreateInstance<T>();
-			var inProperties = GetProperties(inObject);
-			var outProperties = GetProperties(outObject);
-			foreach (var outProperty in outProperties)
+			var matchedProperties = from inProperty in GetProperties(inObject)
+									 from outProperty in GetProperties(outObject)
+									 where inProperty.Name == outProperty.Name
+			                         select new PropertyInfoSet(inProperty, outProperty);
+
+			foreach (var match in matchedProperties)
 			{
-				foreach (var inProperty in inProperties)
-				{
-					if (inProperty.Name != outProperty.Name || inProperty.PropertyType != outProperty.PropertyType)
-						continue;
-					var value = inProperty.GetValue(inObject, null);
-					outProperty.SetValue(outObject, value, null);
-				}
+				var inValue = match.InProperty.GetValue(inObject, null);
+				if (inValue == null) continue;
+
+				var outValue = SpartConvert(inValue, match.OutProperty.PropertyType);
+				if (outValue == null) continue;
+
+				match.OutProperty.SetValue(outObject, outValue, null);
 			}
+
 			return outObject;
 		}
 
-		private static IEnumerable<PropertyInfo> GetProperties(object o)
+		private static object SpartConvert(object value, Type type)
 		{
-			var key = o.GetType();
+			try
+			{
+				return Convert.ChangeType(value, type);
+			}
+			catch (InvalidCastException)
+			{
+				if (type == typeof(string))
+					return value.ToString();
+			}
+			return null;
+		}
+
+		private static IEnumerable<PropertyInfo> GetProperties(object obj)
+		{
+			var key = obj.GetType();
 			if (Cache.ContainsKey(key) == false)
 				Cache.Add(key, key.GetProperties());
 			return Cache[key];
+		}
+
+		// custom tuple for matched properties
+		private class PropertyInfoSet
+		{
+			public PropertyInfo InProperty { get; private set; }
+			public PropertyInfo OutProperty { get; private set; }
+
+			public PropertyInfoSet(PropertyInfo inProperty, PropertyInfo outProperty)
+			{
+				InProperty = inProperty;
+				OutProperty = outProperty;
+			}
 		}
 	}
 }
